@@ -6,7 +6,9 @@
     <meta charset="UTF-8">
     
     <!--Google Fonts -->
-
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Barcode+128+Text&display=swap" rel="stylesheet">
 
     <style>
       html {
@@ -14,11 +16,19 @@
         line-height: 1.5;
         background-color: #110310;
       }
-      
       * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+      }
+      
+      a.navlink:link {
+        color: #BCA679;
+        transition: 0.5s; 
+      }
+      
+      a.navlink:hover {
+        font-size: 110%;
       }
 
       #topgradient {
@@ -29,7 +39,7 @@
       #bottomgradient {
         height: 80px;
         background-color: #110310;
-        background-image: linear-gradient(to top, #8FA1FF, rgb(0, 0, 0, 0), rgb(0, 0, 0, 0));
+        background-image: linear-gradient(to top, #8FA1FF, rgb(0, 0, 0, 0));
       }
       
       .main-container {
@@ -55,17 +65,22 @@
       .navbar-container{
         width: 1200px;
         margin-bottom: 40px;
+        display: flex;
+        gap: 80px;
       }
       
+      /* 1200 / 3 = 400, width is 360*/
       .navbar-content{
-        width: 590px;
-        height: 250px;
-        background-color: #2ecc71;
+        width: 300px;
+        height: 80px;
+        /*background-color: #2ecc71;*/
         display: flex;
         align-items: center;
         justify-content: center;
+        font-size: 3em;
         color: white;
-        font-size: 18px;
+        font-family: "Libre Barcode 128 Text", system-ui;
+
       }
       
     </style>
@@ -76,7 +91,17 @@
         <div class="headline">
           <img src="homepageheader.png">
         </div>
-        <div class="navbar-container"></div>
+        <div class="navbar-container">
+          <div class="navbar-content">
+             <a class="navlink" href="url">GET IN TOUCH.</a>
+          </div>
+         <div class="navbar-content">
+           <!--For consistent spacing-->
+          </div>
+          <div class="navbar-content">
+            <a class="navlink" href="url">ABOUT.</a>
+          </div>
+        </div>
       </div>
       <div id="bottomgradient"></div>
     </div>
