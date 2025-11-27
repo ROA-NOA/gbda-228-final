@@ -4,31 +4,37 @@
     <!--Made by Soromtochi Anozie on [2025/11/22]-->
     <title>Final Assignment</title>
     <meta charset="UTF-8">
-    
+
     <!--Google Fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Libre+Barcode+128+Text&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Barcode+128+Text&display=swap" rel="stylesheet">
 
     <style>
-      html {
-        font-size: 20px;
-        line-height: 1.5;
-        background-color: #110310;
-      }
       * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
       }
-      
+
+      html {
+        font-size: 20px;
+        line-height: 1.5;
+        background-color: #110310;
+      }
+
       a.navlink:link {
         color: #BCA679;
-        transition: 0.5s; 
+        transition: 0.5s;
       }
-      
+
       a.navlink:hover {
         font-size: 110%;
+      }
+
+      img {
+        /*makes alt text readable*/
+        color: white;
       }
 
       #topgradient {
@@ -36,22 +42,23 @@
         background-color: #110310;
         background-image: linear-gradient(to top, rgb(0, 0, 0, 0), rgb(0, 0, 0, 0), #8FA1FF);
       }
+
       #bottomgradient {
         height: 80px;
         background-color: #110310;
         background-image: linear-gradient(to top, #8FA1FF, rgb(0, 0, 0, 0));
       }
-      
+
       .main-container {
         width: 1440px;
         margin: 0 auto;
       }
-        
+
       .content-strip {
         width: 1200px;
         margin: 0 auto;
       }
-        
+
       .headline {
         width: 1200px;
         height: 1020px;
@@ -61,46 +68,99 @@
         justify-content: center;
         font-size: 32px;
       }
-      
-      .navbar-container{
+
+      .navbar-container {
         width: 1200px;
         margin-bottom: 40px;
         display: flex;
-        gap: 80px;
+        gap: 200px;
       }
-      
-      /* 1200 / 3 = 400, width is 360*/
-      .navbar-content{
-        width: 300px;
+
+      .nav-content {
+        width: 500px;
         height: 80px;
         /*background-color: #2ecc71;*/
         display: flex;
         align-items: center;
         justify-content: center;
         font-size: 3em;
-        color: white;
         font-family: "Libre Barcode 128 Text", system-ui;
-
+        margin: 0 auto;
       }
-      
+
+      .content-section {
+        width: 1200px;
+        display: flex;
+        gap: 160px;
+        margin-bottom: 60px;
+      }
+
+      .content-block-2x1 {
+        width: 400px;
+        margin: auto auto;
+        background-color: #2ecc71;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: 1em;
+      }
     </style>
   </head>
   <body>
     <div class="main-container">
       <div class="content-strip">
         <div class="headline">
-          <img src="homepageheader.png">
+          <img src="homepageheader.png" alt="Large leader that reads 'welcome to the grove, the personal portfolio of Soromtochi Anozie' In the background is a painted forest in behind a lake that reflects the sunset sky and forest. The painting is made with hues of purple, blue and black.">
         </div>
         <div class="navbar-container">
-          <div class="navbar-content">
-             <a class="navlink" href="url">GET IN TOUCH.</a>
+          <div class="nav-content">
+            <a class="navlink" href="url">GET IN TOUCH.</a>
           </div>
-         <div class="navbar-content">
-           <!--For consistent spacing-->
-          </div>
-          <div class="navbar-content">
+          <div class="nav-content">
             <a class="navlink" href="url">ABOUT.</a>
           </div>
+        </div>
+        <!--actual content starts-->
+
+        <!--1st portfolio section-->
+        <div class="content-section">
+          <div class="content-block-2x1">
+            <p>THE FITNESS GRAHM <br> ARE YOU SURE ABOUT THAT </p>
+          </div>
+          <div class="content-block-2x1">
+            <p>BAK</p>
+          </div>
+        </div>
+        <!--2nd portfolio section-->
+        <div class="content-section">
+          <div class="content-block-2x1">
+            <p>THE FITNESS GRAHM</p> 
+            <p>ARE YOU SURE ABOUT THAT </p>
+          </div>
+          <div class="content-block-2x1">
+            <p>BAK</p>
+          </div>
+        </div>
+        <!--3rd portfolio section-->
+        <div class="content-section">
+          <div class="content-block-2x1">
+            <p>THE FITNESS GRAHM <br> ARE YOU SURE ABOUT THAT </p>
+          </div>
+          <div class="content-block-2x1">
+            <p>BAK</p>
+          </div>
+        </div>
+        <!--Learn about me section-->
+        <div class="content-section">
+          <div class="nav-content">
+            <a class="navlink" href="url">LEARN ABOUT ME.</a>
+          </div>
+        </div>
+        <div class="content-block-2x1">
+          <p>THE FITNESS GRAHM</p> 
+          <p>ARE <br>YOU<br> SURE <br>ABOUT<br> THAT </p>
         </div>
       </div>
       <div id="bottomgradient"></div>
