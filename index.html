@@ -21,6 +21,7 @@
         font-size: 20px;
         line-height: 1.5;
         background-color: #110310;
+        ;
       }
 
       a.navlink:link {
@@ -58,10 +59,11 @@
         font-style: normal;
         font-family: "Libre Barcode 128 Text", system-ui;
       }
-      
+
       /*for barcode headers*/
       h3 {
-        font-size: 3em;
+        color: #BCA679;
+        font-size: 1.6em;
         font-weight: 400;
         font-style: normal;
         font-family: "Libre Barcode 128 Text", system-ui;
@@ -93,12 +95,13 @@
       .content-strip {
         width: 1200px;
         margin: 0 auto;
+        /*background-color: white;*/
       }
 
       .headline {
         width: 1200px;
         height: 1020px;
-        margin-bottom: 40px;
+        margin-bottom: 30px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -107,7 +110,7 @@
 
       .navbar-container {
         width: 1200px;
-        margin-bottom: 40px;
+        margin-bottom: 60px;
         display: flex;
         gap: 200px;
       }
@@ -123,15 +126,54 @@
         margin: 0 auto;
       }
 
-      .content-section {
+      .content-section-1x1 {
         width: 1200px;
         display: flex;
-        gap: 160px;
         margin-bottom: 60px;
+      }
+
+      .content-section-2x1 {
+        width: 1200px;
+        display: flex;
+        gap: 80px;
+        margin-bottom: 80px;
+      }
+
+      .content-section-3x1 {
+        width: 1200px;
+        display: flex;
+        gap: 50px;
+        margin-bottom: 80px;
+      }
+
+      .content-block-1x1 {
+        width: 400px;
+        margin: 0 auto;
+        /*background-color: #2ecc71;*/
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: 1em;
+        color: #EFD9CE;
       }
 
       .content-block-2x1 {
         width: 400px;
+        margin: 0 auto;
+        /*background-color: #2ecc71;*/
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: 1em;
+        color: #EFD9CE;
+      }
+
+      .content-block-3x1 {
+        width: 300px;
         margin: 0 auto;
         /*background-color: #2ecc71;*/
         display: flex;
@@ -152,7 +194,7 @@
         </div>
         <div class="navbar-container">
           <div class="nav-content">
-            <a class="navlink" href="url">GET IN TOUCH.</a>
+            <a class="navlink" href="contact-page.html">GET IN TOUCH.</a>
           </div>
           <div class="nav-content">
             <a class="navlink" href="url">ABOUT.</a>
@@ -161,12 +203,12 @@
         <!--actual content starts-->
 
         <!--1st portfolio section-->
-        <div class="content-section">
-          <div class="content-block-2x1">
+        <div class="content-section-1x1">
+          <div class="content-block-1x1">
             <img style="width: 200px" src="ProjectHeader.png" alt="description of image">
           </div>
         </div>
-        <div class="content-section">
+        <div class="content-section-2x1">
           <div class="content-block-2x1">
             <img style="width: 360px" src="tree_sentinel.png" alt="description of image">
           </div>
@@ -179,7 +221,7 @@
           </div>
         </div>
         <!--2nd portfolio section-->
-        <div class="content-section">
+        <div class="content-section-2x1">
           <div class="content-block-2x1">
             <h1>Iconography Assignment</h1>
             <p>This was a short introductory assignment that gave us a feel for Adobe Illustrate and experience working within a theme</p>
@@ -192,7 +234,7 @@
           </div>
         </div>
         <!--3rd portfolio section-->
-        <div class="content-section">
+        <div class="content-section-2x1">
           <div class="content-block-2x1">
             <img style="width: 360px" src="outOfManyThumbnail.png" alt="description of image">
           </div>
@@ -213,9 +255,9 @@
         <div class="content-block-2x1">
           <img style="width: 360px; margin-bottom: 150px;" src="cambianraised_arms.png" alt="description of image">
         </div>
-                <div class="navbar-container">
+        <div class="navbar-container">
           <div class="nav-content">
-            <a class="navlink" href="url">GET IN TOUCH.</a>
+            <a class="navlink" href="contact-page.html">GET IN TOUCH.</a>
           </div>
           <div class="nav-content">
             <a class="navlink" href="url">ABOUT.</a>

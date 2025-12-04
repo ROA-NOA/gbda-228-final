@@ -21,6 +21,7 @@
         font-size: 20px;
         line-height: 1.5;
         background-color: #110310;
+        ;
       }
 
       a.navlink:link {
@@ -58,7 +59,7 @@
         font-style: normal;
         font-family: "Libre Barcode 128 Text", system-ui;
       }
-      
+
       /*for barcode headers*/
       h3 {
         color: #BCA679;
@@ -94,12 +95,13 @@
       .content-strip {
         width: 1200px;
         margin: 0 auto;
+        /*background-color: white;*/
       }
 
       .headline {
         width: 1200px;
         height: 1020px;
-        margin-bottom: 40px;
+        margin-bottom: 30px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -108,7 +110,7 @@
 
       .navbar-container {
         width: 1200px;
-        margin-bottom: 40px;
+        margin-bottom: 60px;
         display: flex;
         gap: 200px;
       }
@@ -124,11 +126,37 @@
         margin: 0 auto;
       }
 
-      .content-section {
+      .content-section-1x1 {
         width: 1200px;
         display: flex;
-        gap: 160px;
         margin-bottom: 60px;
+      }
+
+      .content-section-2x1 {
+        width: 1200px;
+        display: flex;
+        gap: 80px;
+        margin-bottom: 80px;
+      }
+
+      .content-section-3x1 {
+        width: 1200px;
+        display: flex;
+        gap: 50px;
+        margin-bottom: 80px;
+      }
+
+      .content-block-1x1 {
+        width: 400px;
+        margin: 0 auto;
+        /*background-color: #2ecc71;*/
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: 1em;
+        color: #EFD9CE;
       }
 
       .content-block-2x1 {
@@ -143,7 +171,7 @@
         font-size: 1em;
         color: #EFD9CE;
       }
-      
+
       .content-block-3x1 {
         width: 300px;
         margin: 0 auto;
@@ -160,19 +188,33 @@
   </head>
   <body>
     <div class="main-container">
-      <div id="topgradient"></div>
       <div class="content-strip">
-
-        <div class="content-section">
+        <div id="topgradient"></div>
           <div class="nav-content">
             <h3>GET IN TOUCH.</h3>
           </div>
+          <div class="content-section-3x1" style="margin-top: 80;">
+            <div class="content-block-3x1">
+              <img style="width: 360px" src="humanhand.png" alt="description of image">
+            </div>
+            <div class="content-block-3x1">
+              <p style="font-size: 1.3em; color: #FF2E00;">Buisiness Inquiries Only.</p>
+              <p>Email : Suanozie@gmail.com</p>
+            </div>
+            <div class="content-block-3x1">
+              <img style="width: 360px" src="airhand.png" alt="description of image">
+            </div>
+          </div>
+          <div class="navbar-container">
+          <div class="nav-content">
+            <a class="navlink" href="index.html">HOME.</a>
+          </div>
+          <div class="nav-content">
+            <a class="navlink" href="url">ABOUT.</a>
+          </div>
         </div>
-        <div class="content-section" style="color:white">
-          Boomshakalaka
-        </div>
+        <div id="bottomgradient"></div>
       </div>
-      <div id="bottomgradient"></div>
     </div>
   </body>
 </html>
