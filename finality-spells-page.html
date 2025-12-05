@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+  <head>
+    <!--Made by Soromtochi Anozie on [2025/11/22]-->
+    <title>Final Assignment</title>
+    <meta charset="UTF-8">
+
+    <!--Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Libre+Barcode+128+Text&display=swap" rel="stylesheet">
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html {
+        font-size: 20px;
+        line-height: 1.5;
+        background-color: #110310;
+        ;
+      }
+      
+      a:any-link {
+        color: #8FA1FF
+      }
+
+      a.navlink:link {
+        color: #BCA679;
+        transition: 0.5s;
+        font-family: "Libre Barcode 128 Text", system-ui;
+
+      }
+
+      a.navlink:hover {
+        font-size: 110%;
+      }
+
+      a.navlink:visited {
+        color: #BCA679;
+        transition: 0.5s;
+      }
+
+      img {
+        /*makes alt text readable*/
+        color: white;
+      }
+
+      h1 {
+        font-family: "Bai Jamjuree", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 1.6em;
+        margin-bottom: 0.5em;
+      }
+
+      h2 {
+        font-size: 2.18em;
+        font-weight: 400;
+        font-style: normal;
+        font-family: "Libre Barcode 128 Text", system-ui;
+      }
+            
+      h2.alt {
+        font-size: 2.8em;
+      }
+
+      /*for barcode headers*/
+      h3 {
+        color: #BCA679;
+        font-size: 1.6em;
+        font-weight: 400;
+        font-style: normal;
+        font-family: "Libre Barcode 128 Text", system-ui;
+      }
+
+      p {
+        font-family: "Bai Jamjuree", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+
+      #topgradient {
+        height: 80px;
+        background-color: #110310;
+        background-image: linear-gradient(to top, rgb(0, 0, 0, 0), rgb(0, 0, 0, 0), #8FA1FF);
+      }
+
+      #bottomgradient {
+        height: 80px;
+        background-color: #110310;
+        background-image: linear-gradient(to top, #8FA1FF, rgb(0, 0, 0, 0), rgb(0, 0, 0, 0));
+      }
+
+      .main-container {
+        width: 1440px;
+        margin: 0 auto;
+      }
+
+      .content-strip {
+        width: 1200px;
+        margin: 0 auto;
+        /*background-color: white;*/
+      }
+
+      .headline {
+        width: 1200px;
+        height: 1020px;
+        margin-bottom: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 32px;
+      }
+
+      .navbar-container {
+        width: 1200px;
+        margin-bottom: 60px;
+        display: flex;
+        gap: 200px;
+      }
+
+      .navbar-container-3x1 {
+        width: 1200px;
+        margin-bottom: 60px;
+        display: flex;
+        gap: 160px;
+      }
+
+      .nav-content {
+        width: 500px;
+        height: 80px;
+        /*background-color: #2ecc71;*/
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 3em;
+        margin: 0 auto;
+      }
+
+      .content-section-1x1 {
+        width: 1200px;
+        display: flex;
+        margin-bottom: 60px;
+      }
+
+      .content-section-2x1 {
+        width: 1200px;
+        display: flex;
+        gap: 80px;
+        margin-bottom: 80px;
+      }
+
+      .content-section-3x1 {
+        width: 1200px;
+        display: flex;
+        gap: 50px;
+        margin-bottom: 80px;
+      }
+
+      .content-block-1x1 {
+        width: 400px;
+        margin: 0 auto;
+        /*background-color: #2ecc71;*/
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: 1em;
+        color: #EFD9CE;
+      }
+      
+      .content-block-1x1-text {
+        width: 500px;
+        margin: 0 auto;
+        /*background-color: #2ecc71;*/
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: 1em;
+        color: #EFD9CE;
+      }
+
+      .content-block-2x1 {
+        width: 400px;
+        margin: 0 auto;
+        /*background-color: #2ecc71;*/
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: 1em;
+        color: #EFD9CE;
+      }
+
+      .content-block-3x1 {
+        width: 300px;
+        margin: 0 auto;
+        /*background-color: #2ecc71;*/
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: 1em;
+        color: #EFD9CE;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-container">
+      <div id="topgradient"></div>
+      <div class="content-strip">
+        <div class="headline">
+          <img src="finality-spells-pagehero.png" alt="Blue burn">
+        </div>
+        <div class="navbar-container-3x1">
+          <div class="nav-content">
+            <a class="navlink" href="index.html">HOME.</a>
+          </div>
+          <div class="nav-content">
+            <a class="navlink" href="contact-page.html">GET IN TOUCH.</a>
+          </div>
+          <div class="nav-content">
+            <a class="navlink" href="about-page.html">ABOUT.</a>
+          </div>
+        </div>
+
+        <!--actual content starts-->
+        <!-- -->
+         <div class="content-section-1x1">
+          <div class="content-block-1x1">
+            <img src="description_header.png" alt="description of image">
+          </div>
+        </div>
+        <!-- -->
+        <div class="content-block-1x1-text" style="margin-top: 60; margin-bottom: 30;"> 
+           <p>
+             Finality spells is an addon for the popular Minecraft mod <a href="https://iron.wiki/">Irons Spells and Spellbooks</a>. I've been working it as a way to display my art and animation in an interactive medium. It combines two of my favorite things- gaming and art- to create experiences that play as good as they look.
+          </p>
+        </div>
+        <!-- -->
+        <div class="content-block-3x1">
+          <h1 style="color: #FF2E00;"><em>Interested?</em></h1>
+            <h2 class="alt">
+              <a class="navlink" href="resume.pdf" target="_blank">VIEW RESUME</a>
+            </h2>
+        </div>
+        <!-- -->
+        <div class="navbar-container-3x1" style="margin-top: 80">
+          <div class="nav-content">
+            <a class="navlink" href="index.html">HOME.</a>
+          </div>
+          <div class="nav-content">
+            <a class="navlink" href="contact-page.html">GET IN TOUCH.</a>
+          </div>
+          <div class="nav-content">
+            <a class="navlink" href="about-page.html">ABOUT.</a>
+          </div>
+        </div>
+      </div>
+      <div id="bottomgradient"></div>
+    </div>
+  </body>
+</html>
