@@ -225,6 +225,28 @@
         font-size: 1em;
         color: #EFD9CE;
       }
+      
+      .human_animated{
+          position: relative;
+          animation-name: human_hand;
+          animation-duration: 1s;
+      }
+      .air_animated{
+          position: relative;
+          animation-name: air_hand;
+          animation-duration: 1s;
+      }
+      
+      @keyframes human_hand {  
+        0%   {left:600px; top:0px;}
+        100% {left:0px; top:0px;}
+      }
+
+      @keyframes air_hand {
+        0%   {left:-600px; top:0px;}
+        100% {left:0px; top:0px;}
+      }
+      
     </style>
   </head>
   <body>
@@ -236,14 +258,14 @@
           </div>
           <div class="content-section-3x1" style="margin-top: 80;">
             <div class="content-block-3x1">
-              <img src="images/contact_page/humanhand.png" alt="description of image">
+              <img src="images/contact_page/humanhand.png" class="human_animated" alt="hand reaching from the left">
             </div>
             <div class="content-block-3x1">
-              <p style="font-size: 1.3em; color: #FF2E00;">Buisiness Inquiries Only.</p>
+              <p class="text_animated" style="font-size: 1.3em; color: #FF2E00;">Buisiness Inquiries Only.</p>
               <p>Email : Suanozie@gmail.com</p>
             </div>
             <div class="content-block-3x1">
-              <img src="images/contact_page/airhand.png" alt="description of image">
+              <img src="images/contact_page/airhand.png" class="air_animated" alt="finger reaching from the right">
             </div>
           </div>
           <div class="navbar-container">
