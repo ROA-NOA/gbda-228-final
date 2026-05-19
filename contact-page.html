@@ -12,64 +12,33 @@
 
     <!-- CSS Mastersheet Link-->
     <link rel="stylesheet" href="style\master.css">
-    <style>
-        .human_animated {
-            position: relative;
-            animation-name: human_hand;
-            animation-duration: 1.2s;
-        }
 
-        .air_animated {
-            position: relative;
-            animation-name: air_hand;
-            animation-duration: 1.2s;
-        }
-
-        @keyframes human_hand {
-            0% {
-                left: 600px;
-                top: 0px;
-            }
-
-            100% {
-                left: 0px;
-                top: 0px;
-            }
-        }
-
-        @keyframes air_hand {
-            0% {
-                left: -600px;
-                top: 0px;
-            }
-
-            100% {
-                left: 0px;
-                top: 0px;
-            }
-        }
-    </style>
+    <!-- CSS Animations File Link-->
+    <link rel="stylesheet" href="style\animations.css">
 </head>
 <body>
     <div id="topgradient"></div>
-    <div class="main-container">
+    <div class="main-container page_mask_horiz">
         <div class="content-strip">
             <div class="nav-content">
                 <h3>GET IN TOUCH.</h3>
             </div>
             <div class="content-section-3x1" style="margin-top: 3em;">
                 <div class="content-block-3x1">
-                    <img src="images/contact_page/humanhand.png" class="human_animated" alt="hand reaching from the left">
+                    <img src="images/contact_page/shattered_human_hand.svg" class="human_animated" alt="hand reaching from the left">
                 </div>
                 <div class="content-block-3x1">
-                    <p class="text_animated" style="font-size: 1.3em; color: #FF2E00;">Buisiness Inquiries Only.</p>
+                    <a href="mailto:Suanozie@gmail.com">
+                        <img src="images\contact_page\envelope.svg" class="envelope_glow" style="margin: 2.5em;" alt="Glowing lightblue letter icon">
+                    </a>
+                    <p class="text_animated" style="font-size: 1.2em; color: #FF2E00;">Buisiness Inquiries Only.</p>
                     <p>Email : Suanozie@gmail.com</p>
                 </div>
                 <div class="content-block-3x1">
-                    <img src="images/contact_page/airhand.png" class="air_animated" alt="finger reaching from the right">
+                    <img src="images/contact_page/shattered_air_hand.svg" class="air_animated" alt="finger reaching from the right">
                 </div>
             </div>
-            <div class="navbar-container">
+            <div class="navbar-container text_bottom_up_fade" style="position: fixed; bottom: 2em;">
                 <div class="nav-content">
                     <a class="navlink" href="index.html">HOME.</a>
                 </div>
@@ -79,6 +48,7 @@
             </div>
         </div>
     </div>
-    <div id="bottomgradient"></div>
+    <!-- Different bottom style to ensure gradient is always at the bottom of the screen-->
+    <div id="bottomgradient" style="position: absolute; bottom: 0px; width: 100%;"></div>
 </body>
 </html>

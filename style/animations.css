@@ -1,0 +1,105 @@
+.page_mask_horiz {
+    animation-name: open_up_horiz; 
+    animation-duration: 1.2s;
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes open_up_horiz {
+    0% {
+        clip-path: polygon(50% 0%, 50% 0%, 50% 100%, 50% 100%);
+    }
+
+    100% {
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100% );
+    }
+}
+
+@keyframes open_up_vert {
+    0% {
+        clip-path: polygon(0% 50%, 100% 50%, 100% 50%, 0% 50%);
+    }
+
+    100% {
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100% );
+    }
+}
+
+.text_bottom_up_fade {
+    animation-name: bottom_up_fade;
+    animation-duration: 1s;
+    animation-delay: 1s;
+  
+}
+
+@keyframes bottom_up_fade {
+    0% {
+        bottom: 20px;
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
+
+.air_animated {
+    position: relative;
+    animation-name: human_hand;
+    animation-delay: 0s;
+    animation-duration: 1.2s;
+   
+}
+
+@keyframes human_hand {
+    0% {
+        left: 600px;
+        opacity: 0%;
+    }
+
+    100% {
+        left: 0px;
+        opacity: 100%;
+    }
+}
+
+.human_animated {
+    position: relative;
+    animation-name: air_hand;
+    animation-delay: 0s;
+    animation-duration: 1.2s;
+}
+
+@keyframes air_hand {
+    0% {
+        left: -600px;
+        opacity: 0%;
+    }
+
+    100% {
+        left: 0px;
+        opacity: 100%;
+    }
+}
+
+.envelope_glow {
+    border-radius: 0.8em;
+    position: relative;
+    animation-name: envelope_glow;
+    animation-duration: 4.2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes envelope_glow {
+    0% {
+        box-shadow: 0px 0px 5px 0px #8FA1FF;
+    }
+
+    50% {
+        box-shadow: 0px 0px 60px 0px #8FA1FF;
+    }
+
+    100% {
+        box-shadow: 0px 0px 5px 0px #8FA1FF;
+    }
+}
