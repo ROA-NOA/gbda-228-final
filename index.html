@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en-CA">
 <head>
-    <!--Made by Soromtochi Anozie on [2025/11/22]-->
+    <!--Made by Soromtochi Anozie on [2026/06/27]-->
     <title>Final Assignment</title>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!--Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,19 +14,22 @@
     <!-- CSS Mastersheet Link-->
     <link rel="stylesheet" href="style\master.css">
 
+    <!-- Testing CSS file TO BE MERGED WITH MASTER.CSS-->
+    <link rel="stylesheet" href="style\index-rework.css">
+
     <!-- CSS Animations File Link-->
     <link rel="stylesheet" href="style\animations.css">
 </head>
 <body>
     <div class="main-container">
-        <div class="content-strip">
-            <div class="headline">
-                <img src="images\homepage\homepage_hero.png" alt="Large leader that reads 'welcome to the grove, the personal
+        <div class="header">
+            <img src="images\homepage\homepage_hero.png" alt="Large leader that reads 'welcome to the grove, the personal
                                             portfolio of Soromtochi Anozie' In the background is a
                                             painted forest behind a lake that reflects the sunset
                                             and forest. The painting is made with hues of purple,
                                             blue and black, with hints of orange in the sunset.">
-            </div>
+        </div>
+        <div class="content-strip">
             <div class="navbar-container">
                 <div class="nav-content">
                     <a class="navlink" href="contact-page.html">GET IN TOUCH.</a>
@@ -34,69 +38,115 @@
                     <a class="navlink" href="about-page.html">ABOUT.</a>
                 </div>
             </div>
-            <!--actual content starts-->
-            <!--1st portfolio section-->
+            <!--Projects image banner-->
             <div class="content-section-1x1">
                 <div class="content-block-1x1">
-                    <img style="width: 200px" src="images\homepage\project_header.png" alt="description of image">
+                    <img src="images\homepage\project_header.png" alt="description of image">
                 </div>
             </div>
-            <div class="content-section-2x1">
-                <div class="content-block-2x1">
-                    <img style="width: 420px" src="images\homepage\tree_sentinel.png" alt="description of image">
+            <!--actual content starts-->
+            <!--Headline Projects-->
+            <div class="projectContainer">
+                <!--This Website! Highlight Panel-->
+                <div class="projectPanel">
+                    <div class="projectHighlightInfoBox">
+                        <h1>This Website!</h1>
+                        <p>
+                            Logo redesign for the CANPAD doctors confference Youth and Young adult branch
+                        </p>
+                        <h2>
+                            <a class="navlink" href="finality-spells-page.html">ENTER</a>
+                        </h2>
+                    </div>
+                    <img class="projectImg" src="images\homepage\this_website_highlight_banner.png" alt="description of image">
                 </div>
-                <div class="content-block-2x1">
-                    <h1>Finality Spells</h1>
+                <!--Hakka Nation Fictional Redesign Highlight Panel-->
+                <div class="projectPanel">
+                    <div class="projectHighlightInfoBox">
+                        <h1>Hakka Nation Fictional Redesign</h1>
+                        <p>
+                            Logo redesign for the CANPAD doctors confference Youth and Young adult branch
+                        </p>
+                        <h2>
+                            <a class="navlink" href="finality-spells-page.html">ENTER</a>
+                        </h2>
+                    </div>
+                    <img class="projectImg" src="images\homepage\hakka_nation_redesign_highlight_banner.png" alt="description of image">
+                </div>
+                <!--CANPAD YYA Redesign Highlight Panel-->
+                <div class="projectPanel">
+                    <div class="projectHighlightInfoBox">
+                        <h1>CANPAD YYA Logo Redesign</h1>
+                        <p>
+                            Logo redesign for the CANPAD doctors confference Youth and Young adult branch
+                        </p>
+                        <h2>
+                            <a class="navlink" href="finality-spells-page.html">ENTER</a>
+                        </h2>
+                    </div>
+                    <img class="projectImg" src="images\homepage\CANPAD_YYA_logo_design.png" alt="description of image">
+                </div>
+                <!--Client Design Assignment Highlight Panel-->
+                <div class="projectPanel">
+                    <div class="projectHighlightInfoBox">
+                        <h1>Client Design Assignment</h1>
+                        <p>
+                            Logo redesign for the CANPAD doctors confference Youth and Young adult branch
+                        </p>
+                        <h2>
+                            <a class="navlink" href="finality-spells-page.html">ENTER</a>
+                        </h2>
+                    </div>
+                    <img class="projectImg" src="images\homepage\outOfManyThumbnail.png" alt="description of image">
+                </div>
+                <!--Finality Spells Highlight Panel-->
+                <div class="projectPanel">
+                    <div class="projectHighlightInfoBox">
+                        <h1>Finality Spells</h1>
+                        <p>
+                            A passion project in the form of a Minecraft mod. It combines my skills as a
+                            pixel artist, animator, and gameplay designer to create something I can enjoy with my friends
+                        </p>
+                        <h2>
+                            <a class="navlink" href="finality-spells-page.html">ENTER</a>
+                        </h2>
+                    </div>
+                    <img class="projectImg" src="images\homepage\shard_guardian.png" alt="description of image">
+                </div>
+            </div>
+            <!--See more projects link! [blurbs are still being written]-->
+            <!--Simple about me blurb with segway to full page-->
+            <div class="content-section-2x1-alt envelope_glow">
+                <div class="content-block-2x1-alt">
+                    <img style="width:110%" src="images\homepage\deerbone_mask.gif" alt="description of image">
+                </div>
+                <div class="content-block-2x1-alt">
+                    <h1>ABOUT ME</h1>
                     <p>
-                        A passion project in the form of a Minecraft mod. It combines my skills as a
-                        pixel artist, animator, and gameplay designer to create something I can enjoy with my friends
+                        Storyteller, artist, programmer. Come find out what I can do,
+                        <span class="highlight" style="font-size:1.1em;"><i>and who I am!</i> </span>
                     </p>
                     <h2>
-                        <a class="navlink" href="finality-spells-page.html">ENTER</a>
+                        <a class="navlink" href="about-page.html">DIVE IN</a>
                     </h2>
                 </div>
             </div>
-            <!--2nd portfolio section-->
-            <div class="content-section-2x1">
-                <div class="content-block-2x1">
-                    <h1>Iconography Assignment</h1>
+            <!--Like what you see? GET IN TOUCH-->
+            <div class="content-section-2x1-alt envelope_glow">
+                <div class="content-block-2x1-alt">
+                    <h1>GET IN TOUCH</h1>
                     <p>
-                        This was a short introductory assignment that gave us a feel for Adobe Illustrate
-                        and experience working within a theme
+                        Don't be shy, <span class="highlight" style="font-size:1.1em;"><i>I won't bite</i> </span>
                     </p>
                     <h2>
-                        <a class="navlink" href="iconography-assignment-page.html">ENTER</a>
+                        <a class="navlink" href="contact-page.html">DIVE IN</a>
                     </h2>
                 </div>
-                <div class="content-block-2x1">
-                    <img style="width: 420px" src="images\homepage\teapot_thumbnail.png" alt="description of image">
+                <div class="content-block-2x1-alt">
+                    <img style="width:95%" src="images\homepage\ThunessakIdleNoSpin_facing_left.gif" alt="description of image">
                 </div>
             </div>
-            <!--3rd portfolio section-->
-            <div class="content-section-2x1">
-                <div class="content-block-2x1">
-                    <img style="width: 360px" src="images\homepage\outOfManyThumbnail.png" alt="description of image">
-                </div>
-                <div class="content-block-2x1">
-                    <h1>Brand Design Assigment</h1>
-                    <p>
-                        An in class assignment that forced us to work with classmates to simulate
-                        client collaboration experience through design and mock-up phases.
-                    </p>
-                    <h2>
-                        <a class="navlink" href="brand-design-assignment-page.html">ENTER</a>
-                    </h2>
-                </div>
-            </div>
-            <!--Learn about me section-->
-            <div class="content-section">
-                <div class="nav-content">
-                    <a class="navlink" href="about-page.html">LEARN ABOUT ME.</a>
-                </div>
-            </div>
-            <div class="content-block-2x1">
-                <img style="width: 360px; margin-bottom: 150px;" src="images\homepage\cambianraised_arms.png" alt="description of image">
-            </div>
+            <!--Footer-->
             <div class="navbar-container">
                 <div class="nav-content">
                     <a class="navlink" href="contact-page.html">GET IN TOUCH.</a>
@@ -108,5 +158,6 @@
         </div>
     </div>
     <div id="bottomgradient"></div>
+    <script src="style\s_master.js"></script>
 </body>
 </html>

@@ -1,6 +1,26 @@
+.content-block-2x1-alt {
+    width: 40%;
+    margin: 0 auto;
+    /*background-color: #2ecc71;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1em;
+    color: #EFD9CE;
+}
+
+.content-section-2x1-alt {
+    width: 100%;
+    height:45vh;
+    display: flex;
+    gap: 5%;
+    margin-bottom: 80px;
+}
 
 .projectHighlightInfoBox {
-    border-radius: 50px;
+    border-radius: 2.28em;
     corner-shape: square square bevel bevel;
     position: absolute;
     padding: 3%;
@@ -11,13 +31,6 @@
     background: linear-gradient(0deg,rgba(17, 3, 16, 1) 0%, rgba(17, 3, 16, 0.59) 81%, rgba(237, 83, 83, 0) 95%);
 }
 
-.highlightRestingIcon {
-    opacity: 1;
-    position: absolute;
-    top: 50%;
-    object-fit:cover;
-}
-
 .projectContainer {
     color: #EFD9CE;
     display: flex;
@@ -26,10 +39,12 @@
     justify-content: center;
     overflow: hidden;
     box-sizing: border-box;
+    margin-bottom: 6em;
+    margin-top: 2em;
 }
 
 .projectImg {
-    border-radius: 50px;
+    border-radius: 2.3em;
     corner-shape: bevel;
     width: 100%;
     height: 100%;
@@ -41,15 +56,13 @@
     background-position: center;
     background-repeat: no-repeat;
     height: 70vh;
-    border-radius: 50px;
+    border-radius: 2.3em;
     flex: 0.5;
-    margin: 10px;
+    margin: 0.36em;
     position: relative;
     transition: flex 0.7s ease-in;
     -webkit-transition: all 500ms ease-out;
 }
-
-
 
 .projectPanel h2 {
      opacity: 0;
@@ -78,10 +91,6 @@
         flex: 2.5;
     }
 
-    .highlightRestingIcon:hover {
-        opacity: 0;
-        transition: opacity 200ms ease-in;
-    }
     .projectPanel:hover h1 {
         opacity: 1;
         transition: opacity 200ms ease-in 0.3s;
@@ -104,19 +113,24 @@
 /*Devices without a mouse (Phone | Mobile)*/
 @media (hover: none) {
     .projectPanel.active {
-        flex: 5;
+        flex: 2.5;
+    }
+
+    .projectPanel.active h1 {
+        opacity: 1;
+        transition: opacity 200ms ease-in 0.3s;
     }
 
     .projectPanel.active h2 {
         opacity: 1;
         transition: opacity 400ms ease-in 0.4s;
-        text-align:center;
-        justify-content:center;
-        position:center;
+        text-align: center;
+        justify-content: center;
+        position: center;
     }
 
     .projectPanel.active p {
         opacity: 1;
-        transition: opacity 400ms ease-in 0.4s; 
+        transition: opacity 100ms ease-in 0.25s;
     }
 }
