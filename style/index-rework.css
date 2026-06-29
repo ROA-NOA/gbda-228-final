@@ -19,6 +19,12 @@
     margin-bottom: 80px;
 }
 
+.git-forge-scaled {
+    width: 20vw;
+    height: 10vh;
+    scale: 0.35;
+}
+
 .light-blue-border{
     border-radius: 0.8em;
     position: relative;
