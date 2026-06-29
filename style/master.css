@@ -10,6 +10,9 @@ html {
     background-color: #110310;
 }
 
+body {
+    opacity:1;
+}
 
 a:any-link {
     color: #8FA1FF
@@ -166,7 +169,7 @@ p {
 .content-section-3x1 {
     width: 1200px;
     display: flex;
-    gap: 50px;
+    gap: 1.2em;
     margin-bottom: 80px;
 }
 
@@ -184,7 +187,7 @@ p {
 }
 
 .content-block-1x1-text {
-    width: 470px;
+    width: 30vw;
     margin: 0 auto;
     /*background-color: #2ecc71;*/
     display: flex;

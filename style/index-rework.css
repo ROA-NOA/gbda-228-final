@@ -25,6 +25,21 @@
     box-shadow: 0px 0px 35px 0px #8FA1FF;
 }
 
+.banner-bottom-gradient {
+    position: absolute;
+    padding: 3%;
+    padding-top: 8%;
+    top: 80%;
+    width: 100%;
+    height: 20%;
+    background: linear-gradient(0deg,rgba(17, 3, 16, 1) 0%, rgba(237, 83, 83, 0) 100%);
+}
+.banner-info-text {
+    position: absolute;
+    margin: auto;
+    width: 100%;
+}
+
 .projectHighlightInfoBox {
     border-radius: 2.28em;
     corner-shape: square square bevel bevel;
