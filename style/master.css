@@ -10,6 +10,7 @@ html {
     background-color: #110310;
 }
 
+
 a:any-link {
     color: #8FA1FF
 }
@@ -18,6 +19,10 @@ a.navlink:link {
     color: #BCA679;
     transition: 0.5s;
     font-family: "Libre Barcode 128 Text", system-ui;
+    animation-name: button_colour_shift;
+    animation-duration: 3.8s;
+    animation-iteration-count: infinite;
+    transition-timing-function: ease-in;
 }
 
 a.navlink:hover {
@@ -102,13 +107,14 @@ p {
 }
 
 .headline {
-    width: 1200px;
-    height: 1020px;
-    margin-bottom: 30px;
+    margin-bottom: 2em;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 32px;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
 }
 
 .highlight {
