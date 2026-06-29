@@ -25,11 +25,12 @@ a.navlink:link {
     animation-name: button_colour_shift;
     animation-duration: 3.8s;
     animation-iteration-count: infinite;
-    transition-timing-function: ease-in;
+    transition-timing-function: ease-in-out;
 }
 
 a.navlink:hover {
     font-size: 108%;
+    scale: 1.08;
 }
 
 a.navlink:visited {
