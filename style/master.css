@@ -1,3 +1,4 @@
+/*Mass View width adjustments needed for better usability on different screen sizes and mobile support*/
 * {
     margin: 0;
     padding: 0;
@@ -98,14 +99,14 @@ p {
 }
 
 .main-container {
-    width: 1440px;
+    width: 1440px; /*For window resizing, set to 99vw and start adjusting the pages. Should've done that before hand rip.*/
     margin: 0 auto;
     animation-name: open_up_horiz;
     animation-duration: 1.2s;
 }
 
 .content-strip {
-    width: 1200px;
+    width: 1200px; /* 83% is roughly 1200px at the main container's 1440px, remember for mobile adaptation*/
     margin: 0 auto;
     /*background-color: white;*/
 }
